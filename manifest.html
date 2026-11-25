@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Манифест «Леса рук»</title>
+<meta name="description" content="Лес крепче топоров. Манифест закрытого сообщества и медиаплатформы «Лес рук».">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --pine:#254332;--pine-deep:#1a3025;--mint:#DDEEE7;--linen:#EBEC7A;--berry:#BB397C;--ghost:#F2F0FE;
+  --display:"Philosopher","Georgia",serif;--text:"Ubuntu","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--pine-deep);color:var(--mint);font-family:var(--text);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left)) max(16px,env(safe-area-inset-right))}
+@media (min-width:700px){.wrap{padding-inline:40px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;border-radius:999px;font:500 16px/1 var(--text);text-decoration:none;border:1.5px solid transparent;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--linen);outline-offset:3px}
+.btn-main{background:var(--linen);color:var(--pine-deep)}
+.btn-main:hover{background:#f4f59a}
+.btn-ghost{border-color:rgba(242,240,254,.6);color:var(--ghost)}
+.btn-ghost:hover{background:rgba(242,240,254,.1)}
+
+.top{position:sticky;top:0;z-index:10;background:rgba(26,48,37,.92);backdrop-filter:blur(8px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-size:22px;color:var(--ghost)}
+.brand img{width:36px;height:36px;border-radius:50%}
+.top .btn{padding:10px 18px;font-size:15px}
+
+.m-hero{position:relative;overflow:hidden;background:var(--pine-deep) url("img/hero.webp") center/cover no-repeat}
+.m-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,48,37,.35),rgba(26,48,37,.85))}
+.m-hero .wrap{position:relative;z-index:1;padding-block:96px 72px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--linen)}
+h1,h2{font-family:var(--display);font-weight:400;line-height:1.05;margin:0;text-wrap:balance}
+.m-hero h1{font-size:clamp(56px,10vw,128px);color:var(--ghost);margin-top:16px}
+
+.m-body{position:relative}
+.m-body .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:64px;padding-block:72px 96px;align-items:start}
+.m-text{max-width:66ch}
+.m-text p{margin:0 0 1.2em}
+.m-text .first::first-letter{font-family:var(--display);float:left;font-size:4.2em;line-height:.85;padding:.06em .12em 0 0;color:var(--linen)}
+.m-text .turn{font-family:var(--display);font-size:clamp(24px,2.6vw,30px);line-height:1.35;color:var(--ghost);margin:1.4em 0}
+.m-text .last{font-family:var(--display);font-size:clamp(26px,3vw,36px);line-height:1.3;color:var(--linen);margin-top:1.4em}
+.m-art{position:sticky;top:96px;opacity:.95}
+@media (max-width:860px){.m-body .wrap{grid-template-columns:1fr;gap:32px}.m-art{position:static;max-width:240px;order:-1}}
+
+.m-cta{background:var(--berry);color:var(--ghost)}
+.m-cta .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-block:56px}
+.m-cta h2{font-size:clamp(32px,4.4vw,52px)}
+.m-cta .ctas{display:flex;flex-wrap:wrap;gap:12px}
+footer{background:var(--pine-deep);font-size:14px;border-top:1px solid rgba(221,238,231,.12)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:24px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/logo.webp" alt="" width="36" height="36">Лес рук</a>
+    <a class="btn btn-main" href="index.html#price">Подписаться</a>
+  </div>
+</header>
+
+<main>
+  <section class="m-hero">
+    <div class="wrap">
+      <span class="eyebrow">Манифест «Леса рук»</span>
+      <h1>Лес крепче топоров</h1>
+    </div>
+  </section>
+
+  <section class="m-body">
+    <div class="wrap">
+      <div class="m-text">
+        <p class="first">Представьте себе древний, могучий лес. Он растет столетиями, его корни глубоко уходят в землю, соединяясь в невидимой сети, питающей каждое дерево. В этом лесу есть свои правила, свой ритм жизни, свои тайные тропы, по которым идут только те, кто знает, как их увидеть.</p>
+        <p>Но есть те, кто боится леса. Они видят в нем что-то чуждое, темное, непонятное. Им кажется, что в его чащах что-то скрывается, что деревья стоят слишком близко друг к другу, что тень слишком густая. Они приходят с топорами, вырубают просеки, ставят заборы и предупреждающие таблички: «Природой не предусмотрено», «Лес должен быть правильным», «Настоящие деревья растут по-другому», «Все это лесная пропаганда». Им хочется, чтобы лес был редким, прирученным, посаженным по линейке. Чтобы деревья росли ровно, не сплетались кронами, не создавали теней.</p>
+        <p>Иногда они пытаются пересадить деревья из леса в свои парки. Но в парках деревья растут иначе. Они стоят отдельно, их кроны обрезаны, а корни не могут переплетаться друг с другом. И в этом одиночестве дерево уже не то же самое. Оно становится декоративным, удобным для восприятия, но больше не живет свою собственную жизнь.</p>
+        <p class="turn">Лесофобия — это страх перед разнообразием, перед естественным порядком вещей. Это попытка сделать так, чтобы лес был незаметен, чтобы он казался случайностью, редкостью. Чтобы деревья боялись расти рядом.</p>
+        <p>Иногда у тех, кто чувствует себя частью леса, просто нет возможности его исследовать. Добраться до леса непросто — лес огражден высоким забором, а пути к нему заколочены запретами и усыпаны проверочными постами. Воздух пропитан тревогой, а каждое движение на пути сопровождается угрозами. Мир делает все, чтобы лес оставался невидимым, а тем, кто хочет его найти, приходилось идти на риск.</p>
+        <p>Если бы у каждого была возможность заглянуть в чащу, многие обнаружили бы, что сами – часть леса. Они увидели бы, как их корни уже давно тянутся в глубину, как их ветви естественно сплетаются с другими, как они чувствуют себя по-настоящему свободными среди таких же деревьев.</p>
+        <p class="turn">Но лес всегда рядом. Его семена разносятся ветром, корни пробиваются даже сквозь бетон. Там, где вырубают рощу, через несколько лет снова поднимаются молодые побеги. Лес сильнее топоров.</p>
+        <p class="last">Если ты знаешь этот лес, если чувствуешь его силу — ты понимаешь. 🌱</p>
+      </div>
+      <img class="m-art" src="img/m_art.webp" alt="" width="580" height="800">
+    </div>
+  </section>
+
+  <section class="m-cta">
+    <div class="wrap">
+      <h2>Присоединяйтесь к лесу</h2>
+      <div class="ctas">
+        <a class="btn btn-main" href="index.html#price">Подписаться</a>
+        <a class="btn btn-ghost" href="index.html">На главную</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Лес рук, 2026</span>
+    <span><a href="https://www.instagram.com/lezruk" target="_blank" rel="noopener">Instagram</a></span>
+  </div>
+</footer>
+</body>
+</html>
